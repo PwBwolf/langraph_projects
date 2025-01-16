@@ -22,6 +22,12 @@ class NodeResponse:
 @dataclass(kw_only=True)
 class AgentState(InputState):
     search_response: NodeResponse = field(default_factory=NodeResponse)
-    web_scraper_response: NodeResponse = field(default_factory=NodeResponse)
-    supervisor_response: Optional[str] = None 
+    web_scraper_response: list[dict] = field(default_factory=list)
+    supervisor_response: Optional[str] = None
+    task_history: list[dict] = field(default_factory=list)
 
+
+@dataclass(kw_only=True)
+class OutputState:
+    web_content: Optional[str] = None
+    

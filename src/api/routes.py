@@ -27,6 +27,7 @@ async def index_documents(
 
     # Execute the graph
     result = await graph.ainvoke(state, config=config)
+
     print(result)
     return IndexResponse(
         message="Indexing complete",

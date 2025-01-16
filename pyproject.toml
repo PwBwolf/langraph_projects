@@ -14,10 +14,12 @@ dependencies = [
     "langchain>=0.2.14",
     "langchain-openai>=0.1.22",
     "langchain-fireworks>=0.1.7",
+    "langchain-community>=0.3.14",
     "pymilvus>=2.2.11",
     "fastapi>=0.100.0",
     "uvicorn>=0.22.0",
-    "sentence-transformers>=3.3.1"
+    "sentence-transformers>=3.3.1",
+    "beautifulsoup4==4.12.3"
 ]
 
 
